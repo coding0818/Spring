@@ -1,0 +1,14 @@
+package kr.co.ch02.sub2;
+
+public class Computer {
+
+	private CPU cpu;
+	private RAM ram;
+	private HDD hdd;
+	
+	public void show() {
+		cpu.show();
+		ram.show();
+		hdd.show();
+	}
+}

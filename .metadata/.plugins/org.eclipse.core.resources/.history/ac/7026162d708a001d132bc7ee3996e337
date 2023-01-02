@@ -1,0 +1,20 @@
+package kr.co.ch02.sub2;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Computer {
+
+	private CPU cpu;
+	
+	public 
+	
+	private RAM ram;
+	private HDD hdd;
+	
+	public void show() {
+		cpu.show();
+		ram.show();
+		hdd.show();
+	}
+}
