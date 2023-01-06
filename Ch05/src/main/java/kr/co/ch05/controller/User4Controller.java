@@ -41,4 +41,17 @@ public class User4Controller {
 		model.addAttribute("user", user);
 		return "/user4/modify";
 	}
+	
+	@PostMapping("/user4/modify")
+	public String modify(User4VO vo) {
+		service.updateUser4(vo);
+		return "redirect:/user4/list";
+	}
+	
+	@GetMapping("/user4/delete")
+	public String delete(int seq) {
+		service.deleteUser4(seq);
+		return "redirect:/user4/list";
+	}
+	
 }
